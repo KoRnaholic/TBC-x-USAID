@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26,30,31);
+    gap: 350px;
+    padding: 24px 0;
+    
+}
+
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    color: rgb(244,244,244);
+    align-items: center;
+    
+}
+
+.navbar li{
+   list-style: none;
+   font-weight: 100;
+}
+.navbar li:hover{
+    color: rgb(5,146,199);
+    cursor: pointer;
+}
+
+/* background section */
+
+.background-img{
+    /* background-image: url('/src/images/background-tbc.webp');
+    width: 100%;
+    height: 352px;
+    background-size: 100%;
+    background-repeat: no-repeat; */
+   
+    background-image: url('/src/images/background-tbc.webp');
+    width: 100%;
+    height: 352px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: rgb(244,244,244);
+    font-weight: 900;
+    font-size: 42px;
+}
+
+.text-34{
+    font-size: 34px;
+}
+
+.text-32{
+    font-size: 32px;
+    color:rgb(244,244,244) ;
+}
+
+.background-img div{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.tbc-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43,43,43);
+    padding: 65px 0px;
+}
+.tbc-info div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.tbc-info a{
+    color:rgb(0,174,211);
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 900;
+}
+.tbc-info a:hover{
+    color:rgb(170,170,170)
+}
+
+.line-height{
+    line-height: 46px;
+}

@@ -49,9 +49,6 @@ body{
 }
 
 /* background section */
-
-
-
 .text-34{
     font-size: 34px;
 }
@@ -129,10 +126,6 @@ body{
     line-height: 66px;
 }
 
-/* header{
-    overflow: hidden;
-} */
-
 
 /* mbile nav */
 
@@ -143,23 +136,94 @@ body{
     display: none;
 }
 
-
-
 .btn-close-nav{
     display: none;
 }
 
 
 
+/* courses-section */
+
+.courses-section{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(22,22,22);
+    color: white;
+   padding-top: 40px;
+   padding-left: 300px;
+   padding-right: 300px;
+}
+
+.box-wrapper{
+display: flex;
+gap: 40px;
+flex-wrap: wrap;
+width: 100%;
+row-gap: 10em;
+justify-content: center;
+}
+.box-header{
+    padding-left: 80px;
+    margin-bottom: 60px;
+}
+
+.box-img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 1px solid rgb(85,85,85);
+    border-radius: 6px;
+    padding-bottom: 30px;
+}
+
+.box-img div{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-img a {
+    cursor: pointer;
+    margin-top: 80px;
+    font-size: 18px;
+    color: rgb(0,173,237);
+    transition: all 0.3s ease; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+   
+}
+.box-img a:hover{
+    color: rgb(6,130,177);
+    transition: all 0.3s ;
+}
+
+.box-img div{
+    margin-top: 20px;
+}
+
+.text-18{
+    font-size: 18px;
+    color: rgb(207,207,207);
+    font-weight: 900;
+}
+
+.text-14{
+    font-size: 14px;
+    color: rgb(236,236,236);
+    font-weight: 800;
+
+
+}
 
 
 
 @media (max-width: 750px){
      .btn-mobile-nav{
-        /* opacity: 1; */
         display: block;
-        /* z-index: 2; */
-        
     }
    
     .nav-list{
@@ -243,7 +307,6 @@ body{
 @media (max-width: 450px){
 .navbar{
     display: flex;
-    /* padding:10px; */
     justify-content: center;
     gap:100px
 }

@@ -1,0 +1,19 @@
+
+@import url('/src/styles/styles.css');
+/* @media (max-width: 700px){
+    .btn-mobile-nav{
+        display: none;
+    }
+    body{
+        background-color: red;
+    }
+
+    .navbar{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26,30,31);
+    gap: 100px;
+    padding: 24px 0;
+    }
+} */

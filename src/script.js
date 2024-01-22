@@ -25,3 +25,24 @@ window.addEventListener('scroll', function () {
         navEl.classList.remove('nav-transparent')
     }
 })
+
+//scrolling nav
+document.addEventListener('DOMContentLoaded', function () {
+    var header = document.querySelector('.nav-container');
+    var lastScrollTop = 0;
+
+    window.addEventListener('scroll', function () {
+        var currentScrollTop = window.scrollY;
+
+        if (currentScrollTop > lastScrollTop) {
+            // Scrolling down
+            header.classList.add('nav-hidden');
+        } else {
+            // Scrolling up
+            header.classList.remove('nav-hidden');
+        }
+
+        lastScrollTop = currentScrollTop;
+    });
+});
+

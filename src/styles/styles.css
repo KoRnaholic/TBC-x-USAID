@@ -365,13 +365,15 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 120px;
+    align-items: center;
 }
 
-.partner-box{
+.partners-box{
     display: flex;
-    flex-direction: column;
-    gap:100px
+    /* flex-direction: column; */
+    gap:100px;
+    align-items: center;
 }
 
 .partner-box h2{

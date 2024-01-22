@@ -23,9 +23,21 @@ body{
     position: relative;
     
 }
+.nav-container{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* background:transparent; */
+    /* opacity: 0.9; */
+}
+
+.nav-transparent{
+    opacity: 0.9;
+}
 
 .primary-color{
     color: rgb(0,174,243);
+    /* padding-left: 10px; */
 }
 
 .nav-list{
@@ -96,6 +108,8 @@ body{
 
 .background-container {
     position: relative;
+    margin-top: 85px;
+   
 }
 
 .background-img {
@@ -105,6 +119,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+   
 }
 
 .text-overlay {
@@ -159,7 +174,7 @@ display: flex;
 gap: 40px;
 flex-wrap: wrap;
 width: 100%;
-row-gap: 10em;
+/* row-gap: 10em; */
 justify-content: center;
 }
 .box-header{
@@ -322,10 +337,54 @@ justify-content: center;
     justify-content: center;
     gap:100px
 }
+
+.courses-section{
+    padding-left: 0;
+    padding-right: 0;
+    padding: 20px 0;
+}
+.box-header{
+    margin-left: 50px;
+}
+.tbc-info div{
+    padding-left: 40px;
+}
+.box-header h2{
+    padding-left: 10px;
+}
+.primary-color{
+    padding-left: 10px;
+}
+.box-wrapper{
+    gap: 20px;
+}
+.box-header{
+    margin-bottom: 20px;
+}
+.text-overlay{
+    left: 50%;
+}
+.text-overlay span{
+    font-size: 28px;
+}
+.box-img a{
+    margin-top: 0;
+}
+}
+
+@media (max-width: 1350px){
+    .courses-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 1650px){
  .box-header{
     padding-left: 0;
    }
+    .courses-section{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }

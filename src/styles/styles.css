@@ -107,6 +107,7 @@ body{
     cursor: pointer;
     font-size: 22px;
     font-weight: 900;
+    align-self: flex-start;
 }
 .tbc-info a:hover{
     color:rgb(170,170,170)
@@ -290,6 +291,9 @@ justify-content: center;
     justify-content: space-between;
     padding-bottom: 20px;
    
+}
+.faq-link a:hover{
+    color:rgb(170,170,170)
 }
 
 .questions{

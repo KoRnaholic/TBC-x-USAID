@@ -754,7 +754,6 @@ justify-content: center;
 
 
  .custom-partners-wrapper {
-   
             display: flex;
             justify-content: center; /* Center groups horizontally */
             overflow: hidden;
@@ -771,4 +770,9 @@ justify-content: center;
             height: auto;
             display: none;
             margin: 0 auto; /* Center images horizontally within each group */
+            transition: opacity 1s ease-in-out; /* Smooth transition for opacity changes */
+        }
+
+        .right-arrow, .left-arrow {
+            cursor: pointer;
         }

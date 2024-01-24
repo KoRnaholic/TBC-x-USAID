@@ -83,27 +83,40 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
     // Start the loop
     startImageLoop();
+
+    // Add event listeners to arrows
+    document.querySelector('.right-arrow').addEventListener('click', moveToNextGroup);
+    document.querySelector('.left-arrow').addEventListener('click', moveToPreviousGroup);
 });
+
+var currentGroupIndex = 0;
+var groups;
+
+function moveToNextGroup() {
+    hideAllGroups();
+    currentGroupIndex = (currentGroupIndex + 1) % groups.length;
+    showGroup(groups[currentGroupIndex]);
+}
+
+function moveToPreviousGroup() {
+    hideAllGroups();
+    currentGroupIndex = (currentGroupIndex - 1 + groups.length) % groups.length;
+    showGroup(groups[currentGroupIndex]);
+}
 
 function startImageLoop() {
     // Get all groups
-    var groups = document.querySelectorAll(".custom-group");
+    groups = document.querySelectorAll(".custom-group");
 
-    // Show each group one by one with a delay
-    groups.forEach(function (group, index) {
-        setTimeout(function () {
-            hideAllGroups();
-            showGroup(group);
-        }, index * 3000); // 2000 milliseconds (2 seconds) delay between groups
-    });
+    // Show the initial group
+    showGroup(groups[currentGroupIndex]);
 
     // Repeat the loop after showing all groups
-    setTimeout(startImageLoop, groups.length * 3000);
+    setInterval(moveToNextGroup, 3000); // Automatically move to the next group every 3 seconds
 }
 
 function hideAllGroups() {
-    var allGroups = document.querySelectorAll(".custom-group");
-    allGroups.forEach(function (group) {
+    groups.forEach(function (group) {
         hideGroup(group);
     });
 }

@@ -49,6 +49,20 @@ document.addEventListener('DOMContentLoaded', function () {
 // ///////////////////////
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var accordionTrigger = document.getElementById('accordion-trigger');
+    var accordionContent = document.getElementById('accordion-content');
 
+    accordionTrigger.addEventListener('click', function () {
+        accordionContent.classList.toggle('show');
+
+        // Adjust max-height based on the actual height of the content
+        if (accordionContent.classList.contains('show')) {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        } else {
+            accordionContent.style.maxHeight = '0';
+        }
+    });
+});
 
 

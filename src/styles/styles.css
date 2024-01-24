@@ -259,7 +259,7 @@ justify-content: center;
 .text-14{
     font-size: 14px;
     color: rgb(236,236,236);
-    font-weight: 800;
+    font-weight: 400;
 
 
 }
@@ -281,7 +281,7 @@ justify-content: center;
 
 .faq-section{
     background-color: rgb(22,22,22);
-    padding: 50px;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
 }
@@ -296,9 +296,12 @@ justify-content: center;
     display: flex;
     justify-content: space-between;
     gap: 450px;
-    border-bottom: 1px solid rgb(53,49,49);
     padding-bottom: 25px;
         font-family: Arial, Helvetica, sans-serif;
+
+}
+.questions-wrapper{
+    border-bottom: 1px solid rgb(53,49,49);
 
 }
 
@@ -311,6 +314,22 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.hidden-box p {
+    /* padding: 30px; */
+    line-height: 30px;
+}
+.hidden-box ul {
+    padding: 20px 10px;
+    list-style: none;
+}
+.hidden-box p{
+    font-size: 18px;
+}
+.hidden-box{
+    padding-bottom: 30px;
+    /* display: none; */
 }
 
 
@@ -640,3 +659,19 @@ justify-content: center;
  /* .hidden {
   opacity: 0;
 } */
+
+
+.questions {
+  cursor: pointer;
+}
+
+.hidden-box {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.hidden-box.show {
+  display: block;
+  max-height: 0
+}

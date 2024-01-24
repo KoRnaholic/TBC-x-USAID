@@ -1,17 +1,17 @@
 
 // displayng menu 
 const btnEl = document.querySelector('.btn-mobile-nav')
-const headerEl = document.querySelector('.nav-list')
+const headerEl = document.querySelector('.navbar-open')
 
 btnEl.addEventListener('click', function () {
-    headerEl.classList.add('navbar-open');
+    headerEl.classList.add('navbar-open-nav');
 
 })
 
 // removing menu 
 const btnCloseEl = document.querySelector('.btn-close-nav')
 btnCloseEl.addEventListener('click', function () {
-    headerEl.classList.remove('navbar-open');
+    headerEl.classList.remove('navbar-open-nav');
 
 })
 
@@ -47,5 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ///////////////////////
+
+
+
+
 
 

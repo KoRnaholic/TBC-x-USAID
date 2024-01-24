@@ -288,6 +288,7 @@ justify-content: center;
 .faq-link{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
    
 }
 
@@ -313,7 +314,7 @@ justify-content: center;
 .faq-box{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 .hidden-box p {
@@ -328,8 +329,28 @@ justify-content: center;
     font-size: 18px;
 }
 .hidden-box{
-    padding-bottom: 30px;
-    /* display: none; */
+    padding-bottom: 10px;
+
+}
+.hidden-box-2{
+    border-bottom: 1px solid rgb(53,49,49);
+    padding-bottom: 10px;
+
+}
+.hidden-box-3{
+    border-bottom: 1px solid rgb(53,49,49);
+    padding-bottom: 10px;
+
+}
+.hidden-box-2 p{
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.hidden-box-3 p{
+    font-size: 18px;
+    line-height: 30px;
+
 }
 
 
@@ -341,14 +362,10 @@ justify-content: center;
 }
      .btn-mobile-nav{
         display: block;
-        /* visibility: visible; */
     }
    
     .nav-list{
-    display: none; 
-    /* transform: translateX(1%); */
-    /* visibility: hidden; */
-   
+    display: none;
     }
   
 
@@ -358,7 +375,6 @@ justify-content: center;
     justify-content:space-between;
     padding: 20px;
     
-
     }
     .text-34{
         font-size: 28px;
@@ -396,12 +412,11 @@ justify-content: center;
     flex-direction: column;
     padding: 20px;
     padding-top: 40px;
-   transform: translateX(100%);
-   font-size: 20px;
-   
+    transform: translateX(100%);
+    font-size: 20px;
     gap: 40px;
     color: rgb(244,244,244);
-      transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
 
 } 
@@ -413,8 +428,6 @@ justify-content: center;
 .close-menu-icon{
     display: block;
 }
-
-
 
 .btn-close-nav{
     border: none;
@@ -531,7 +544,6 @@ justify-content: center;
         left: 40%;
     }
     .partners-wrapper{
-    /* flex-direction: column; */
     gap: 50px;
 }
 .partner-box h2{
@@ -562,7 +574,7 @@ justify-content: center;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 40px; 
-  /* padding: 20px; */
+
 }
 .navbar{
     display: flex;
@@ -578,14 +590,12 @@ justify-content: center;
     padding-right: 0;
     padding: 20px 0;
 }
-/* .box-header{
-    margin-left: 50px;
-} */
+
 .tbc-info div{
     padding-left: 20px;
 }
 .box-header h2{
-    /* padding-left: 10px; */
+
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -660,18 +670,59 @@ justify-content: center;
   opacity: 0;
 } */
 
-
+/* Accordion */
 .questions {
   cursor: pointer;
 }
 
 .hidden-box {
-  display: none;
+  /* display: none; */
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
 
 .hidden-box.show {
   display: block;
-  max-height: 0
+  max-height: 600px
+}
+.hiding-p{
+    padding-top:5px;
+}
+
+
+.hidden-box-2{
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+#accordion-trigger-2{
+    padding-bottom: 0;
+}
+#accordion-trigger-3{
+    padding-bottom: 0;
+}
+
+.hidden-box-2.show {
+  display: block;
+  max-height: 600px
+}
+.hidden-box-3{
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.hidden-box-3.show {
+  display: block;
+  max-height: 600px
+}
+
+
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease; /* Adjust the transition duration and easing as needed */
 }

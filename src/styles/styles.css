@@ -7,6 +7,7 @@
 }
 
 /* NAVBAR */
+
 html{
       overflow-x: hidden;
       scroll-behavior: smooth;
@@ -83,14 +84,12 @@ font-size: 18px;
 
 .text-32{
     font-size: 32px;
-    color:rgba(244, 244, 244, 0.367) ;
     color:rgb(244,244,244) ;
 }
 
 .background-img div{
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;  
 }
 
 .tbc-info{
@@ -135,7 +134,7 @@ font-size: 18px;
     height: 352px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
    
 }
 
@@ -278,7 +277,7 @@ justify-content: center;
 .partners-wrapper div{
     display: flex;
     align-items: center;
-    gap: 120px;
+    /* gap: 120px; */
 }
 
 /* FAQ SECTION */
@@ -600,6 +599,8 @@ justify-content: center;
   grid-gap: 40px; 
 
 }
+
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -750,3 +751,24 @@ justify-content: center;
   transform: rotate(180deg);
   transition: transform 0.3s ease; /* Adjust the transition duration and easing as needed */
 }
+
+
+ .custom-partners-wrapper {
+   
+            display: flex;
+            justify-content: center; /* Center groups horizontally */
+            overflow: hidden;
+        }
+
+        .custom-partners-wrapper .custom-group {
+            display: flex;
+            text-align: center; /* Center images within each group */
+            gap: 120px;
+        }
+
+        .custom-partners-wrapper img {
+            max-width: 100%;
+            height: auto;
+            display: none;
+            margin: 0 auto; /* Center images horizontally within each group */
+        }

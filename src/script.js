@@ -78,3 +78,46 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+/////////
+document.addEventListener("DOMContentLoaded", function () {
+    // Start the loop
+    startImageLoop();
+});
+
+function startImageLoop() {
+    // Get all groups
+    var groups = document.querySelectorAll(".custom-group");
+
+    // Show each group one by one with a delay
+    groups.forEach(function (group, index) {
+        setTimeout(function () {
+            hideAllGroups();
+            showGroup(group);
+        }, index * 3000); // 2000 milliseconds (2 seconds) delay between groups
+    });
+
+    // Repeat the loop after showing all groups
+    setTimeout(startImageLoop, groups.length * 3000);
+}
+
+function hideAllGroups() {
+    var allGroups = document.querySelectorAll(".custom-group");
+    allGroups.forEach(function (group) {
+        hideGroup(group);
+    });
+}
+
+function hideGroup(group) {
+    var images = group.getElementsByTagName("img");
+    for (var i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+}
+
+function showGroup(group) {
+    var images = group.getElementsByTagName("img");
+    for (var i = 0; i < images.length; i++) {
+        images[i].style.display = "block";
+    }
+}

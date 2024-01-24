@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Acordions
+// ACORDIONS
 document.addEventListener('DOMContentLoaded', function () {
     var accordionTriggers = document.querySelectorAll('.questions');
     var accordionContents = document.querySelectorAll('[id^="accordion-content"]');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/////////
+/////////SLIDER
 document.addEventListener("DOMContentLoaded", function () {
     // Start the loop
     startImageLoop();

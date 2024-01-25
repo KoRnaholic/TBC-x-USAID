@@ -158,4 +158,3 @@ function updateDotColors() {
         dot.classList.toggle('active', index === currentGroupIndex);
     });
 }
-// 

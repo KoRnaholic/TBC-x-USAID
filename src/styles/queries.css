@@ -24,6 +24,10 @@
 }
 @media (max-width: 950px){
 /* accordion section */
+    .partner-box h2{
+    text-align: center;
+    transform: translateX(0);
+}
 .group-3{
     position: absolute;
     transform: translateY(200%);
@@ -234,6 +238,7 @@
 }
 
 @media (max-width: 450px){
+
     .grid-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

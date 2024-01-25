@@ -4,7 +4,7 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: rgb(26,30,31);
-    padding: 50px 520px;
+    padding: 50px 450px;
 }
 .footer-wrapper{
     display: flex;
@@ -19,7 +19,7 @@ footer{
     gap: 50px;
 }
 .footer-box a{
-    font-size: 18px;
+    font-size: 16px;
    font-family: 'thin';
 }
 .footer-link{

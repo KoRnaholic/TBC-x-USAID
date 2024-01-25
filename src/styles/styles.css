@@ -78,14 +78,14 @@ font-family: "semiBold";
 .text-overlay {
     position: absolute;
     top: 50%; 
-    left: 40%; 
+    left: 42%; 
     transform: translate(-50%, -50%);
     color: rgb(244,244,244); 
     font-family: 900;
     font-family: sans-serif;
 }
 .text-overlay span{
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 800;
 }
 .text-overlay h1{
@@ -221,14 +221,15 @@ justify-content: center;
 }
 
 .questions p {
-    font-size: 20px;
+    font-size: 18px;
     color:rgb(244,244,244) ;
 }
 
 .faq-box{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    padding: 0 500px;
 }
 
 .hidden-box p {
@@ -240,7 +241,7 @@ justify-content: center;
     list-style: none;
 }
 .hidden-box p{
-    font-size: 18px;
+    font-size: 14px;
 }
 .hidden-box{
     padding-bottom: 10px;
@@ -254,11 +255,11 @@ justify-content: center;
     padding-bottom: 10px;
 }
 .hidden-box-2 p{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
 }
 .hidden-box-3 p{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
 }
 .custom-partners-wrapper {
@@ -425,8 +426,8 @@ justify-content: center;
     }
 
 .dot {
-      height: 10px;
-      width: 10px;
+      height: 7px;
+      width: 7px;
       margin: 0 5px;
       border-radius: 50%;
       background-color: #bbb;

@@ -200,6 +200,7 @@ justify-content: center;
 }
 .faq-link a{
     transition: all 0.3s ease;
+    font-weight: 700;
 
 }
 .faq-link a:hover{

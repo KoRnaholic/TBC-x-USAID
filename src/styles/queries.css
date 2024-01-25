@@ -253,6 +253,10 @@
     display: flex;
     gap: 70px;
 }
+.display-none a{
+    font-size: 18px;
+font-family: 'thin';
+}
 .display-none div{
     display: flex;
     gap:10px

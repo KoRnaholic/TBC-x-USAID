@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'thin';
+    src: url('/src/fonts/font-thin.woff2');
+}
 @media (max-width: 1650px){
  .box-header{
     padding-left: 0;
@@ -299,7 +303,9 @@ font-family: 'thin';
     padding-left: 20px;
 }
 .box-header h2{
-    font-size: 28px;
+    font-size: 30px;
+    font-family: "thin";
+    color: rgb(231,244,244);
 }
 .primary-color{
     padding-left: 10px;

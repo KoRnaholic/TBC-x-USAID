@@ -1,19 +1,312 @@
 
-@import url('/src/styles/styles.css');
-/* @media (max-width: 700px){
-    .btn-mobile-nav{
-        display: none;
-    }
-    body{
-        background-color: red;
+@media (max-width: 1650px){
+ .box-header{
+    padding-left: 0;
+   }
+    .courses-section{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
-    .navbar{
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(26,30,31);
-    gap: 100px;
-    padding: 24px 0;
+    footer{
+        padding: 50px 100px;
     }
+}
+
+@media (max-width: 1350px){
+    .courses-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .partners-wrapper{
+        gap: 50px;
+    }
+}
+@media (max-width: 950px){
+/* accordion section */
+.group-3{
+    position: absolute;
+    transform: translateY(200%);
+}
+
+.dot-container{
+    position: absolute;
+    top: 430px;
+    left: 42%;
+}
+.hidden-box {
+    padding: 0px 30px;
+}
+.hidden-box-2 {
+    padding: 0px 50px;
+}
+.hidden-box-3 {
+    padding: 0px 50px;
+}
+.faq-box{
+    padding: 0 30px;
+}
+.faq-link{
+    padding: 0px 10px;
+}
+.custom-partners-wrapper .custom-group{
+    flex-direction: column;
+    gap: 50px;
+}
+
+.project-partners{
+    min-height: 481px;
+    position: relative;
+}
+
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px; 
+  /* padding: 20px; */
+}
+
+
+/* .partners-wrapper div{
+    flex-direction: column;
+    gap: 60px;
+    animation: slide 5s ease-in infinite;
 } */
+
+   .box-header{
+    padding-left: 0;
+   }
+   .tbc-info{
+    padding: 65px 30px;
+   }
+ 
+    .navbar{
+    gap: 150px;
+    }
+    .text-overlay{
+        left: 40%;
+    }
+    .partners-wrapper{
+    gap: 50px;
+}
+.partner-box h2{
+    text-align: center;
+    padding-left: 0;
+}
+.project-partners{
+    padding: 0;
+}
+
+.partner-box{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+   
+}
+.arrow, .right-arrow{
+    display: none;
+}
+.partners-box{
+    justify-content: center;
+}
+}
+
+@media (max-width: 750px){
+    .nav-hidden {
+        transition: all 0.5s ease;
+        transform: translateY(-100%);
+}
+     .btn-mobile-nav{
+        display: block;
+    }
+   
+    .nav-list{
+    display: none;
+    }
+  
+
+    .navbar{
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-between;
+    padding: 20px;
+    
+    }
+    .text-34{
+        font-size: 28px;
+    }
+    .text-overlay{
+        left: 35%;
+    }
+    .text-overlay span{
+        font-size: 34px;
+    }
+    .text-overlay h1{
+    line-height: 46px;
+}
+   .text-32 {
+    font-size: 20px;
+    padding: 0px 10px;
+}   .line-height{
+    line-height: 30px;
+}
+.menu-icon{
+    fill: aliceblue;
+}
+
+.navbar-open{
+    position: absolute;
+    background-color: rgb(26,30,31);
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    z-index: 1;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 40px;
+    transform: translateX(100%);
+    font-size: 20px;
+    gap: 40px;
+    color: rgb(244,244,244);
+    transition: all 0.5s ease-in-out;
+
+
+} 
+
+.navbar-open-nav{
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+.close-menu-icon{
+    display: block;
+}
+
+.btn-close-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+}
+}
+@media (max-width:650px){
+    .grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px; 
+  /* padding: 20px; */
+}
+.footer{
+    padding: 30px 30px;
+}
+.hidden-question-2{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.hidden-box.show{
+    max-height: 800px;
+}
+.hidden-question{
+    display: none;
+}
+
+.hidden-box{
+    padding: 0;
+    padding-bottom: 10px;
+
+}
+.hidden-box-2{
+    padding: 0;
+    padding-bottom: 10px;
+
+}
+.hidden-box-3{
+    padding: 0;
+    padding-bottom: 10px;
+}
+}
+
+@media (max-width: 450px){
+    .grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px; 
+
+}
+.rights{
+    flex-direction: column-reverse;
+}
+
+.display-none{
+    display: flex;
+    gap: 70px;
+}
+.display-none div{
+    display: flex;
+    gap:10px
+}
+
+.hidden-div{
+    display: none;
+}
+.footer{
+    padding: 30px 30px;
+}
+.footer-link{
+    padding: 5px 15px;
+}
+.questions p{
+    font-size: 24px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap:100px
+}
+.tbc-info{
+    padding: 30px 0;
+}
+
+.courses-section{
+    padding-left: 0;
+    padding-right: 0;
+    padding: 20px 0;
+}
+
+.tbc-info div{
+    padding-left: 20px;
+}
+.box-header h2{
+
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.primary-color{
+    padding-left: 10px;
+}
+.box-wrapper{
+    gap: 20px;
+}
+.box-header{
+    margin-bottom: 20px;
+}
+.text-overlay{
+    left: 45%;
+}
+.text-overlay span{
+    font-size: 28px;
+}
+.box-img a{
+    margin-top: 0;
+}
+
+}

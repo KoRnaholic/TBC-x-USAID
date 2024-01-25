@@ -1,0 +1,7 @@
+ 
+ @import url('/src/styles/styles.css');
+ @import url('/src/styles/header.css');
+ @import url('/src/styles/layout.css');
+ @import url('/src/styles/footer.css');
+
+ @import url('/src/styles/queries.css');

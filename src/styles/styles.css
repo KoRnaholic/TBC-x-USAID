@@ -271,6 +271,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 100px;
+ 
 
 }
 
@@ -358,7 +359,33 @@ justify-content: center;
     line-height: 30px;
 
 }
+.custom-partners-wrapper {
+            display: flex;
+            justify-content: center; /* Center groups horizontally */
+            overflow: hidden;
+        }
 
+        .custom-partners-wrapper .custom-group {
+            display: flex;
+            text-align: center; /* Center images within each group */
+            gap: 120px;
+        }
+
+        .custom-partners-wrapper img {
+            max-width: 100%;
+            height: auto;
+            display: none;
+            margin: 0 auto; /* Center images horizontally within each group */
+            transition: opacity 1s ease-in-out; /* Smooth transition for opacity changes */
+        }
+
+        .right-arrow, .left-arrow {
+            cursor: pointer;
+        }
+
+        .project-partners{
+            min-height: 280px;
+        }
 
 @media (max-width: 750px){
 
@@ -497,8 +524,21 @@ justify-content: center;
   /* padding: 20px; */
 }
 
+.hidden-question-2{
+    display: none;
+}
 @media (max-width: 950px){
 /* accordion section */
+.group-3{
+    position: absolute;
+    transform: translateY(200%);
+}
+
+.dot-container{
+    position: absolute;
+    top: 430px;
+    left: 42%;
+}
 .hidden-box {
     padding: 0px 30px;
 }
@@ -509,11 +549,21 @@ justify-content: center;
     padding: 0px 50px;
 }
 .faq-box{
-    padding: 0 50px;
+    padding: 0 30px;
 }
 .faq-link{
     padding: 0px 10px;
 }
+.custom-partners-wrapper .custom-group{
+    flex-direction: column;
+    gap: 50px;
+}
+
+.project-partners{
+    min-height: 481px;
+    position: relative;
+}
+
 
  .grid-container {
   display: grid;
@@ -521,37 +571,13 @@ justify-content: center;
   grid-gap: 40px; 
   /* padding: 20px; */
 }
-.partners-wrapper {
-    /* overflow-x: hidden; */
-    flex-direction: row;
-   transform: translateX(20%);
-   /* gap: 400px; */
-   transition: all 1s;
-   padding: 10px;
-   /* position: relative; */
-}
-@keyframes slide {
-    /* 0% {margin-left: 0;}
-    25%{margin-left: -33%;}
-    50%{margin-left: -66%;}
-    75%{margin-left: -88%;}
-    100%{margin-left: 0;} */
-    /* 0% { transform: translateX(0); }
-  15% { transform: translateX(-100%); }
-  30% { transform: translateX(-100%); }
-  45% { transform: translateX(-200%); }
-  60% { transform: translateX(-200%); }
-  75% { transform: translateX(-300%); }
-  100% { transform: translateX(0); } */
 
-    
-}
 
-.partners-wrapper div{
+/* .partners-wrapper div{
     flex-direction: column;
     gap: 60px;
     animation: slide 5s ease-in infinite;
-}
+} */
 
    .box-header{
     padding-left: 0;
@@ -652,6 +678,31 @@ justify-content: center;
   grid-gap: 40px; 
   /* padding: 20px; */
 }
+.hidden-question-2{
+    display: block;
+    text-align: center;
+}
+.hidden-box.show{
+    max-height: 800px;
+}
+.hidden-question{
+    display: none;
+}
+
+.hidden-box{
+    padding: 0;
+    padding-bottom: 10px;
+
+}
+.hidden-box-2{
+    padding: 0;
+    padding-bottom: 10px;
+
+}
+.hidden-box-3{
+    padding: 0;
+    padding-bottom: 10px;
+}
 }
 
 @media (max-width: 1350px){
@@ -709,7 +760,7 @@ justify-content: center;
 
 .hidden-box.show {
   display: block;
-  max-height: 600px
+  max-height: 1400px
 }
 .hiding-p{
     padding-top:5px;
@@ -752,27 +803,24 @@ justify-content: center;
   transition: transform 0.3s ease; /* Adjust the transition duration and easing as needed */
 }
 
+/* slider dots */
 
- .custom-partners-wrapper {
-            display: flex;
-            justify-content: center; /* Center groups horizontally */
-            overflow: hidden;
-        }
+ .dot-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 10px;
+    }
 
-        .custom-partners-wrapper .custom-group {
-            display: flex;
-            text-align: center; /* Center images within each group */
-            gap: 120px;
-        }
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: #bbb;
+      cursor: pointer;
+    }
 
-        .custom-partners-wrapper img {
-            max-width: 100%;
-            height: auto;
-            display: none;
-            margin: 0 auto; /* Center images horizontally within each group */
-            transition: opacity 1s ease-in-out; /* Smooth transition for opacity changes */
-        }
-
-        .right-arrow, .left-arrow {
-            cursor: pointer;
-        }
+    .dot.active {
+      background-color: white;
+    }

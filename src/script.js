@@ -87,29 +87,47 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add event listeners to arrows
     document.querySelector('.right-arrow').addEventListener('click', moveToNextGroup);
     document.querySelector('.left-arrow').addEventListener('click', moveToPreviousGroup);
+
+    // Add event listeners to dots
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            hideAllGroups();
+            currentGroupIndex = index;
+            showGroup(groups[currentGroupIndex]);
+            updateDotColors();
+        });
+    });
 });
 
 var currentGroupIndex = 0;
 var groups;
+var dots;
 
 function moveToNextGroup() {
     hideAllGroups();
     currentGroupIndex = (currentGroupIndex + 1) % groups.length;
     showGroup(groups[currentGroupIndex]);
+    updateDotColors();
 }
 
 function moveToPreviousGroup() {
     hideAllGroups();
     currentGroupIndex = (currentGroupIndex - 1 + groups.length) % groups.length;
     showGroup(groups[currentGroupIndex]);
+    updateDotColors();
 }
 
 function startImageLoop() {
     // Get all groups
     groups = document.querySelectorAll(".custom-group");
 
+    // Get all dots
+    dots = document.querySelectorAll('.dot');
+
     // Show the initial group
     showGroup(groups[currentGroupIndex]);
+    updateDotColors();
 
     // Repeat the loop after showing all groups
     setInterval(moveToNextGroup, 3000); // Automatically move to the next group every 3 seconds
@@ -134,3 +152,10 @@ function showGroup(group) {
         images[i].style.display = "block";
     }
 }
+
+function updateDotColors() {
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentGroupIndex);
+    });
+}
+// 

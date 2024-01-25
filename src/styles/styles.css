@@ -10,6 +10,20 @@ body{
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'regular';
+    src: url("/src/fonts/font-regular.woff2");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url('/src/fonts/font-bold.woff2');
+}
+@font-face {
+    font-family: "semiBold";
+    src: url("/src/fonts/font-semiBold.woff2");
+}
+
 /* background section */
 .background-img div{
     display: flex;
@@ -34,6 +48,7 @@ body{
     font-weight: 900;
     align-self: flex-start;
     transition: all 0.3s ease;
+font-family: "semiBold";
 }
 .tbc-info a:hover{
     color:rgb(170,170,170);
@@ -63,7 +78,7 @@ body{
 .text-overlay {
     position: absolute;
     top: 50%; 
-    left: 43%; 
+    left: 40%; 
     transform: translate(-50%, -50%);
     color: rgb(244,244,244); 
     font-family: 900;
@@ -75,6 +90,8 @@ body{
 }
 .text-overlay h1{
     line-height: 66px;
+    font-family: "bold";
+    /* font-size: 36px; */
 }
 .navbar-open{
     display: none;
@@ -112,8 +129,8 @@ justify-content: center;
 }
 .box-header{
     margin-bottom: 60px;
-    color: rgb(219,219,219);
-    /* padding-left: 160px; */
+    color: #DBDBDB;
+    font-family: "thin";
 }
 
 .box-img{
@@ -142,6 +159,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: "regular";
 }
 .box-img a:hover{
     color: rgb(6,130,177);
@@ -320,9 +338,11 @@ justify-content: center;
 
 .partner-box h2{
     text-align: center;
-    transform: translateX(-18%);
+    transform: translateX(-16%);
     font-size: 30px;
     font-weight: 500;
+    font-family: "thin";
+    font-size: 28px;
 }
 .grid-container {
   display: grid;

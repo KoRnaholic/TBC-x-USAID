@@ -1,10 +1,14 @@
 /* NAVBAR */
+@font-face {
+    font-family: 'regular';
+    src: url("/src/fonts/font-regular.woff2");
+}
 .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(26,30,31);
-    gap: 350px;
+    gap: 450px;
     padding: 24px 0;
     position: relative;
     
@@ -31,10 +35,12 @@
     align-items: center;  
 }
 .nav-list a{
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
-    color: rgb(244,244,244);
+    color: #f4f4f4;
     transition: 0.5s;  
+    font-family: "regular";
+    font-weight: 100;
 }
 
 .navbar li{

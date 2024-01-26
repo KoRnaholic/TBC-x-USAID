@@ -85,17 +85,28 @@ document.addEventListener("DOMContentLoaded", function () {
     startImageLoop();
 
     // Add event listeners to arrows
-    document.querySelector('.right-arrow').addEventListener('click', moveToNextGroup);
-    document.querySelector('.left-arrow').addEventListener('click', moveToPreviousGroup);
+    document.querySelector('.right-arrow').addEventListener('click', function () {
+        clearInterval(imageLoopInterval);
+        moveToNextGroup();
+        startImageLoop();
+    });
+
+    document.querySelector('.left-arrow').addEventListener('click', function () {
+        clearInterval(imageLoopInterval);
+        moveToPreviousGroup();
+        startImageLoop();
+    });
 
     // Add event listeners to dots
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
+            clearInterval(imageLoopInterval);
             hideAllGroups();
             currentGroupIndex = index;
             showGroup(groups[currentGroupIndex]);
             updateDotColors();
+            startImageLoop();
         });
     });
 });
@@ -103,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 var currentGroupIndex = 0;
 var groups;
 var dots;
+var imageLoopInterval;
 
 function moveToNextGroup() {
     hideAllGroups();
@@ -130,7 +142,7 @@ function startImageLoop() {
     updateDotColors();
 
     // Repeat the loop after showing all groups
-    setInterval(moveToNextGroup, 3000); // Automatically move to the next group every 3 seconds
+    imageLoopInterval = setInterval(moveToNextGroup, 3000); // Automatically move to the next group every 3 seconds
 }
 
 function hideAllGroups() {
@@ -142,14 +154,14 @@ function hideAllGroups() {
 function hideGroup(group) {
     var images = group.getElementsByTagName("img");
     for (var i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
+        images[i].style.opacity = "0";
     }
 }
 
 function showGroup(group) {
     var images = group.getElementsByTagName("img");
     for (var i = 0; i < images.length; i++) {
-        images[i].style.display = "block";
+        images[i].style.opacity = "1";
     }
 }
 

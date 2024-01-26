@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(26,30,31);
-    gap: 370px;
+    gap: 400px;
     padding: 24px 0;
     position: relative;
     
@@ -30,9 +30,10 @@
 
 .nav-list{
     display: flex;
-    gap: 40px;
+    gap: 45px;
     color: rgb(244,244,244);
     align-items: center;  
+    padding-right: 20px;
 }
 .nav-list a{
     font-size: 14px;

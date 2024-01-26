@@ -58,6 +58,7 @@
 }
 .faq-link{
     padding: 0px 10px;
+    padding-bottom: 20px;
 }
 .custom-partners-wrapper .custom-group{
     flex-direction: column;
@@ -181,7 +182,6 @@
     padding: 20px;
     padding-top: 40px;
     transform: translateX(100%);
-    font-size: 20px;
     gap: 40px;
     color: rgb(244,244,244);
     transition: all 0.5s ease-in-out;
@@ -243,6 +243,11 @@
 }
 
 @media (max-width: 450px){
+    .partner-box h2{
+        font-size: 20px;
+        text-align: left;
+        padding-left: 20px;
+    }
 
     .grid-container {
   display: grid;

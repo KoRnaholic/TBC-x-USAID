@@ -34,6 +34,9 @@
     text-align: center;
     transform: translateX(0);
 }
+.custom-group:nth-child(-n+2){
+    transform: translateY(40%);
+}
 .group-3{
     position: absolute;
     transform: translateY(200%);

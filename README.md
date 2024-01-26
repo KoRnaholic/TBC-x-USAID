@@ -7,12 +7,15 @@
 
 The project follows a specific structure for better organization:
 
-- **src**
-  - **fonts**: Contains font files used in the project.
-  - **icons**: Includes icon files used in the project.
-  - **images**: Holds image files used in the project.
-  - **js**: Houses JavaScript files for project functionality.
-  - **styles**: Contains CSS styles for the project.
+- **TBC-X-USAID** (Main Project Folder)
+  - **src**
+    - **fonts**: Contains font files used in the project.
+    - **icons**: Includes icon files used in the project.
+    - **images**: Holds image files used in the project.
+    - **js**: Houses JavaScript files for project functionality.
+    - **styles**: Contains CSS styles for the project.
+  - **indet.html**: The main HTML file containing your index code.
+  - **README.md**: This file, providing information about the project.
 
 ## Technologies Used
 
@@ -30,4 +33,4 @@ Follow these steps to launch the project:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone [repository_url]
+   git clone [https://github.com/KoRnaholic/TBC-x-USAID.git]

@@ -14,7 +14,7 @@ The project follows a specific structure for better organization:
     - **images**: Holds image files used in the project.
     - **js**: Houses JavaScript files for project functionality.
     - **styles**: Contains CSS styles for the project.
-  - **indet.html**: The main HTML file containing your index code.
+  - **index.html**: The main HTML file containing your index code.
   - **README.md**: This file, providing information about the project.
 
 ## Technologies Used

@@ -143,8 +143,14 @@ justify-content: center;
     padding-bottom: 30px;
 }
 
+.box-img p{
+     word-wrap: break-word;
+
+}
+
 .box-img div{
     padding-left: 20px;
+    /* padding-right   : 10px; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -153,7 +159,7 @@ justify-content: center;
 .box-img a {
     cursor: pointer;
     margin-top: 80px;
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(0,173,237);
     transition: all 0.3s ease; 
     display: flex;
